@@ -14,5 +14,6 @@ public class Juego {
     private String genero;
     private Integer año;
     private String descripcion;
+    private String imagen;
     private String[] plataformas;
 }

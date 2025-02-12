@@ -7,9 +7,13 @@
 </head>
 <body>
   <h1 th:text="${juego.nombre}"/>
+  <img th:src="@{${juego.imagen}}" alt="">
   <p th:text="${juego.genero}"/>
   <p th:text="${juego.año}"/>
   <p th:text="${juego.descripcion}"/>
+  <ul>
+      <li th:each="plataforma:${juego.plataformas}" th:text="${plataforma}"></li>
+  </ul>
   <a href="/web/">Volver</a>
 </body>
 </html>

@@ -28,6 +28,17 @@ ul{
         border: solid 4px green;
         border-radius: 0.5rem;
         max-width: 400px;
+        transition: 0.3s;
+        margin:0;
+
+        &:not(:has(*)){
+            padding:0.5rem;
+        }
+
+        &:hover{
+            background-color: lightgreen;
+            box-shadow: 0 0rem 0.5rem green;
+        }
 
         a{
             color: black;
