@@ -19,6 +19,7 @@ public class LoginController {
     public String login(Model model) {
         return "login";
     }
+
     @PostMapping
     public String processLogin(HttpSession session, Model model, @ModelAttribute User login) {
         var result = securityService.login(login.getUser(), login.getEmail());

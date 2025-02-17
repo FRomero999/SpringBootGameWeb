@@ -28,6 +28,7 @@ public class WebController {
     public String single(Model model, @PathVariable String id) {
         var juego = juegoRepository.findById(id);
         if(juego.isEmpty()) return "404";
+
         else {
             model.addAttribute("juego", juego.get());
             return "single";
